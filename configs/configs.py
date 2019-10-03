@@ -8,5 +8,6 @@ face_describer_model_fp = './pretrained/insightface.pb'.format(BASE_PATH)
 face_describer_tensor_shape = (112, 112)
 face_describer_drop_out_rate = 0.1
 test_img_fp = './tests/test.jpg'.format(BASE_PATH)
+source_video = "./data/1.mp4"
 
 face_similarity_threshold = 800
