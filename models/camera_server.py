@@ -1,5 +1,4 @@
 import cv2
-from configs import configs
 
 '''
 This server:
@@ -26,20 +25,12 @@ class CameraServer(object):
         raise NotImplementedError
 
     def run(self):
-#        print('[Camera Server] Camera is initializing ...')
-#        if self.camera_address is not None:
-#            self.cam = cv2.VideoCapture(self.camera_address)
-#        else:
-#            print('[Camera Server] Camera is not available!')
-          
-#            return
-
-# TODO
-# read offline video
-        off_video = True  
-        if off_video == True:
-            self.cam = cv2.VideoCapture(configs.source_video)
-#---------------------------
+        print('[Camera Server] Camera is initializing ...')
+        if self.camera_address is not None:
+            self.cam = cv2.VideoCapture(self.camera_address)
+        else:
+            print('[Camera Server] Camera is not available!')
+            return
 
         while True:
             self.in_progress = True

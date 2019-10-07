@@ -1,4 +1,4 @@
-from models import base_server
+import base_server
 
 
 class FDServer(base_server.BaseServer):
